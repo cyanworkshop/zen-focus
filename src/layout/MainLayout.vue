@@ -2,7 +2,9 @@
   <div class="main-layout">
     <div class="main-header">
       <div class="card">
-        <a id="logo" href="/">ZEN FOCUS</a>
+        <router-link id="logo" :to="{ name: 'dashboard' }">
+          ZEN FOCUS
+        </router-link>
         <div class="header-wrap">
           <BreadCrumb />
           <div class="flex items-center gap-2">
