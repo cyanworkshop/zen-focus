@@ -22,7 +22,7 @@
           </a>
         </el-col>
         <el-col :span="12">
-          <a href="" class="forgot-password justify-end">
+          <a href="" class="forgot-password" style="justify-content: flex-end">
             <el-icon class="mr-1"><QuestionFilled /></el-icon>
             <span>{{ $t("login.forget-password") }}</span>
           </a>
@@ -89,6 +89,7 @@ const handleGuestLogin = () => {
 .forgot-password {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   font-size: $font-size-h5;
   color: $text-color;
   opacity: 0.6;
